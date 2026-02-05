@@ -1,0 +1,26 @@
+{
+  "trajet": {
+    "depart": "Gare Tanger Ville (TGV)",
+    "arrivee": "FST Tanger (Boukhalef)",
+    "critere": "temps"
+  },
+  "resultats": {
+    "distance_km": 8.64,
+    "temps_min": 11.5,
+    "cout_dh": 15.56,
+    "vitesse_kmh": 45.0,
+    "etapes": 114,
+    "rues": [
+      "Rue Gibraltar",
+      "Avenue de Fès",
+      "Place Oued El Makhazine",
+      "Rue Bir Anzarane",
+      "Rue Hafid Ibn Abdelbarre",
+      "Avenue d'Anfa",
+      "Rue Ibn Battouta",
+      "Rue Ouch Alassafir",
+      "Boulevard Faisal Ibn Abdelaziz",
+      "Boulevard Moulay Rachid شارع مولاي رشيد"
+    ]
+  }
+}

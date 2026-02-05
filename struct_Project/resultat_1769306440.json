@@ -1,0 +1,19 @@
+{
+  "trajet": {
+    "depart": "Gare Tanger Morora",
+    "arrivee": "Grand Stade Ibn Batouta",
+    "critere": "distance"
+  },
+  "resultats": {
+    "distance_km": 5.45,
+    "temps_min": 7.3,
+    "cout_dh": 9.81,
+    "vitesse_kmh": 45.0,
+    "etapes": 94,
+    "rues": [
+      "Rue 14 زنقة",
+      "Rue 66",
+      "Boulevard Royaume d'Arabie Saoudite"
+    ]
+  }
+}

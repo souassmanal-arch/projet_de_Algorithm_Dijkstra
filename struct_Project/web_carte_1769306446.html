@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad56165a5c9e8ce95856fa381692b49d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad56165a5c9e8ce95856fa381692b49d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad56165a5c9e8ce95856fa381692b49d = L.map(
+                "map_ad56165a5c9e8ce95856fa381692b49d",
+                {
+                    center: [35.750493620212765, -5.849622078723404],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0fac5a08d85dea6e40e1563b7657b9c8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0fac5a08d85dea6e40e1563b7657b9c8.addTo(map_ad56165a5c9e8ce95856fa381692b49d);
+        
+    
+            var poly_line_baac75d2600865f6328a8b9368ee39b5 = L.polyline(
+                [[35.7485351, -5.8296076], [35.74822, -5.8296834], [35.7480355, -5.8297431], [35.7474946, -5.8299107], [35.7475027, -5.8302547], [35.7474538, -5.8307435], [35.7474385, -5.8307952], [35.747211, -5.831172], [35.7468551, -5.831565], [35.7466657, -5.8320129], [35.7465802, -5.8322056], [35.7464263, -5.8325044], [35.746214, -5.8328591], [35.7458951, -5.8331998], [35.7457634, -5.8334573], [35.7456916, -5.8336356], [35.7455697, -5.8339548], [35.7453988, -5.8342928], [35.7452785, -5.8346006], [35.7459942, -5.8367027], [35.7460118, -5.8367516], [35.7461531, -5.837144], [35.7463741, -5.8378145], [35.7466919, -5.8386366], [35.746957, -5.8393288], [35.747317, -5.8402734], [35.7475844, -5.8408481], [35.7476326, -5.8409811], [35.7477825, -5.8410063], [35.7479354, -5.8412898], [35.7479005, -5.8414608], [35.7481553, -5.8417892], [35.7489446, -5.8425907], [35.749464, -5.8431021], [35.7497228, -5.8435266], [35.7506654, -5.8451739], [35.7507598, -5.8452724], [35.7509981, -5.8454381], [35.751004, -5.8456307], [35.7509813, -5.8456901], [35.7516822, -5.8470534], [35.7520025, -5.8477092], [35.7523175, -5.8482945], [35.7528379, -5.8493628], [35.7531829, -5.8503897], [35.7533428, -5.85074], [35.7533744, -5.8507529], [35.7534843, -5.8509528], [35.7534836, -5.8509872], [35.7534345, -5.851115], [35.7534068, -5.851144], [35.7534072, -5.8514225], [35.7534604, -5.851782], [35.7537607, -5.8522553], [35.7543197, -5.8531196], [35.7545302, -5.8534186], [35.7548264, -5.8539122], [35.7548611, -5.8539619], [35.7548482, -5.854086], [35.754761, -5.8541287], [35.7547506, -5.8541827], [35.7547357, -5.8542062], [35.7540299, -5.8551367], [35.7535423, -5.8555922], [35.7529709, -5.8564505], [35.7526654, -5.8570114], [35.7522515, -5.8575515], [35.75231, -5.858098], [35.7522079, -5.8587585], [35.7520096, -5.8597282], [35.751943, -5.8600861], [35.7518773, -5.8610042], [35.7516563, -5.8618544], [35.7515941, -5.8622629], [35.7517475, -5.8626853], [35.7515442, -5.863475], [35.751545, -5.8637381], [35.7515865, -5.8640841], [35.7516311, -5.8646554], [35.751568, -5.8650684], [35.7518052, -5.8652991], [35.7519686, -5.8661102], [35.751693, -5.8667074], [35.7522291, -5.8671595], [35.7523603, -5.8673543], [35.7522296, -5.8676378], [35.7520022, -5.8685877], [35.7518805, -5.8685774], [35.7517205, -5.8696679], [35.7516387, -5.8696563], [35.7516757, -5.8699528], [35.752159, -5.8704798], [35.7526159, -5.8708835], [35.7476715, -5.877534]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_ad56165a5c9e8ce95856fa381692b49d);
+        
+    
+            var marker_2403fcafc1054c1ed685c9bf9836d54d = L.marker(
+                [35.7485351, -5.8296076],
+                {
+}
+            ).addTo(map_ad56165a5c9e8ce95856fa381692b49d);
+        
+    
+            var icon_a816ba3a737069f15b9edf4a5feefa51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09225070449405ba7c8fbacb6cf6451a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd49dada8aee7f80ad1fbfbb46625363 = $(`<div id="html_fd49dada8aee7f80ad1fbfbb46625363" style="width: 100.0%; height: 100.0%;">Départ: Gare Tanger Morora</div>`)[0];
+                popup_09225070449405ba7c8fbacb6cf6451a.setContent(html_fd49dada8aee7f80ad1fbfbb46625363);
+            
+        
+
+        marker_2403fcafc1054c1ed685c9bf9836d54d.bindPopup(popup_09225070449405ba7c8fbacb6cf6451a)
+        ;
+
+        
+    
+    
+                marker_2403fcafc1054c1ed685c9bf9836d54d.setIcon(icon_a816ba3a737069f15b9edf4a5feefa51);
+            
+    
+            var marker_fda7063d7f86eb3540b0a17e8e37b95b = L.marker(
+                [35.7476715, -5.877534],
+                {
+}
+            ).addTo(map_ad56165a5c9e8ce95856fa381692b49d);
+        
+    
+            var icon_ef51360b3e0dd3f374f2075a9c0f175c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb6d92e930cfe203fce636c0f65b9446 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a20ec6ad506072a43a3091c86427e64 = $(`<div id="html_0a20ec6ad506072a43a3091c86427e64" style="width: 100.0%; height: 100.0%;">Arrivée: Grand Stade Ibn Batouta</div>`)[0];
+                popup_cb6d92e930cfe203fce636c0f65b9446.setContent(html_0a20ec6ad506072a43a3091c86427e64);
+            
+        
+
+        marker_fda7063d7f86eb3540b0a17e8e37b95b.bindPopup(popup_cb6d92e930cfe203fce636c0f65b9446)
+        ;
+
+        
+    
+    
+                marker_fda7063d7f86eb3540b0a17e8e37b95b.setIcon(icon_ef51360b3e0dd3f374f2075a9c0f175c);
+            
+</script>
+</html>
